@@ -362,6 +362,7 @@ Navbar styling for Medium devices (640px and larger)
 
 }
 
+
 /* Homepage specific styling */
 
 
@@ -401,8 +402,6 @@ Navbar styling for Medium devices (640px and larger)
 }
 
 
-
-
 /* ==============================
 General Layout Styling for Medium devices (640px and larger)
 ================================= */
@@ -419,6 +418,7 @@ General Layout Styling for Medium devices (640px and larger)
     font-size: 40px;
     line-height: 50px;
     width: 60%;
+
   }
 
 
@@ -446,12 +446,21 @@ General Layout Styling for Large devices (1024px or larger)
     padding-top: 50px;
     padding-bottom: 50px;
     background-image: url("../img/home/hero-1024.png");
-    background-size: cover; 
+    background-size: cover;
+    min-height: 350px;
   }
 
   #hero p {
     font-size: 30px;
     line-height: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+  }
+
+  #hero h1 {
+    font-size: 45px;
+    line-height: 60px;
 
   }
 
@@ -483,7 +492,8 @@ General Layout Styling for X-large devices (1440px or larger)
   }
 
   #hero h1 {
-    width: 80%;
+    font-size: 50px;
+
   }
 
 
@@ -623,4 +633,43 @@ footer {
 .contact-icon {
   width: 20px;
   padding-right: 5px;
+}
+
+
+@media only screen and (max-width: 479px) {
+  #hero {
+    background-image: url("../img/home/hero-320.png");
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+
+  #hero h1 {
+    width: 200px;
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+  #hero p {
+    width: 185px;
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  .contact-icon {
+    width: 15px;
+  }
+
+  .contact-line a {
+    font-size: 10px;
+  }
+
+
 }
