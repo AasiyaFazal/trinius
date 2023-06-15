@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXXXX-X', { 'anonymize_ip': true });
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1e68e0300d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="about">
+
+
+
+  <!-- Header Section -->
+
+
+  <header>
+    <div class="desktop-navbar">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Trinius Logo"></a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="work.html">Products</a></li>
+            <li><a class="contact-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+
+
+    <div class="mobile-navbar">
+      <div class="nav-container">
+        <input id="checkBox" class="checkbox" type="checkbox" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <div class="logo-box">
+          <a href="index.html"><img class="logo" src="img/logo.png" alt="Trinius Logo"></a>
+        </div>
+        <div class="menu-items" id="mobile-menu">
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a class="contact-link" href="#contact" onclick="menuToggle()">Contact</a></li>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <div class="why-choose-us">
+
+      <div class="why-choose-us-image">
+        <picture>
+          <source media="(max-width:767px)" srcset="img/about/choose-us-480.png">
+          <img src="img/about/choose-us-1024.png" alt="Why Choose Us Photo">
+        </picture>
+      </div>
+
+      <div class="container">
+        <h2>
+          Why Choose Us
+        </h2>
+        <p>
+          We are the only organisation in the UK that specialises solely in providing Sharia financing options. We pride ourselves in taking a personal approach by getting to know you so that we can truly understand your commercial and financial needs. This allows us to provide the best option for you and your business, whilst providing a seamless and stress free experience.
+        </p>
+        <div class="call-us-today">
+          <a href="#contact" class="button">Call Us Today</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="meet-the-team">
+      <div class="container">
+        <div class="intro-to-team">
+          <h2>
+            Meet the Team
+          </h2>
+          <p>
+            Our roots lie in real estate and our team have skills across: Finance, Asset Management, Planning and Development. This means we can provide support across a wide range of transactions. Our team build long-lasting relationships and as a result, we repeatedly work with the same clients helping them to achieve their aspirations.
+          </p>
+        </div>
+
+
+        <div class="team-profiles">
+          <div class="row">
+
+            <div class="profile">
+              <img src="img/about/profile-1.png" alt="Profile 1 Photo">
+              <p class="name">Mohammad Al Bashir</p>
+              <p class= "role">Co-Founder and CEO</p>
+            </div>
+
+            <div class="profile">
+              <img src="img/about/profile-2.png" alt="Profile 2 Photo">
+              <p class="name">Zainab Al Bashir</p>
+              <p class="role">Co-Founder and COO</p>
+            </div>
+
+            <div class="profile">
+              <img src="img/about/profile-3.png" alt="Profile 3 Photo">
+              <p class="name">Raihan Begum</p>
+              <p class="role">Senior Business Manager</p>
+            </div>
+
+            <div class="profile">
+              <img src="img/about/profile-4.png" alt="Profile 4 Photo">
+              <p class="name">Omari Ahmed</p>
+              <p class="role">Senior Portfolio Manager</p>
+            </div>
+
+            <div class="profile">
+              <img src="img/about/profile-5.png" alt="Profile 5 Photo">
+              <p class="name">Zara Ali</p>
+              <p class="role">Senior Funding Manager</p>
+            </div>
+
+            <div class="profile">
+              <img src="img/about/profile-6.png" alt="Profile 6 Photo">
+              <p class="name">Matt Lovell</p>
+              <p class="role">Senior Funding Manager</p>
+            </div>
+
+            <div class="profile">
+              <img src="img/about/profile-7.png" alt="Profile 7 Photo">
+              <p class="name">Meghan Browne</p>
+              <p class="role">Portfolio and Funding Manager</p>
+            </div>
+
+            <div class="profile">
+              <img src="img/about/profile-8.png" alt="Profile 8 Photo">
+              <p class="name">Vanessa Sanchez</p>
+              <p class="role">Portfolio and Funding Manager</p>
+            </div>
+
+            <div class="profile">
+              <img src="img/about/profile-9.png" alt="Profile 9 Photo">
+              <p class="name">Rochelle Davis</p>
+              <p class="role">Portfolio and Funding Manager</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="contact-us" id="contact">
+    <div class="container">
+
+      <h2>Contact Us</h2>
+      <p>
+        If you have any queries or require advice on what your Sharia bridge financing options are, please get in touch.
+      </p>
+
+      <div class="send-us-a-message">
+        <a href="mailto:enquiries@trinius.co.uk" class="button">Send us a Message</a>
+      </div>
+
+
+      <div class="contact-information">
+        <div class="master-row">
+          <div class="column">
+            <div class="row">
+              <div class="contact-line">
+                <a href="tel:123-456-7890">
+                  <img class="contact-icon" src="img/phone.svg" alt="Phone Icon" />
+                </a>
+                <a href="tel:123-456-7890" class="phone-number">123-456-7890</a>
+              </div>
+              <div class="contact-line">
+                <a href="mailto:enquiries@trinius.co.uk">
+                  <img class="contact-icon" src="img/email.svg" alt="Email Icon" />
+                </a>
+                <a href="mailto:enquiries@trinius.co.uk" class="email-address">enquiries@trinius.co.uk</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <p class="heading">Our Office Address</p>
+            <p class="body">xxxxxxxxx, xxxxxxxx <br> xxxxxx, xxxxxxx</p>
+          </div>
+        </div>
+
+    </div>
+
+  </footer>
+
+
+  <!--Javascript code-->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+
+</body>
+
+</html>

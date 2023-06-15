@@ -1,0 +1,626 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+header {
+  position: fixed;
+  background-color: #001B44;
+  width: 100%;
+  z-index: 9;
+}
+
+header {
+  height: 80px;
+}
+
+
+.logo {
+  width: 90px;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+
+.active-bg {
+  background-color: #001B44;
+  /* box-shadow: 0 1px 4px rgb(146 161 176 / 15%); */
+
+  /* background-color: #dedaf4; */
+  /* background-color: #d9b0e7;  */
+  /* background-color: #d1cceb; */
+  /* background-color: #bacaf0;  */
+}
+
+.container {
+  padding: 0 16px;
+}
+
+main {
+  padding-top: 80px;
+}
+
+
+/* * {
+  box-sizing: border-box;
+} */
+
+body {
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  /* Sets the font size to 16px */
+  font-weight: 400;
+  /* Sets the font weight to regular */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #000000;
+
+}
+
+p {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.home h1 {
+  margin-top: 0px;
+}
+
+
+h2 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.39em;
+  font-weight: 600;
+  margin: 0px;
+  padding: 10px 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+ol {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #9B9785;
+  color: #ffffff;
+  /* needed to override the default link color */
+  font-weight: 800;
+  font-size: 12px;
+  /* text-align: center; */
+  padding: 10px 50px;
+  border-radius: 50px;
+  /* width of the border, type, color */
+  /* transition: 0.2s opacity; */
+  text-decoration: none;
+  min-width: 180px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+
+.button:visited {
+  color: #ffffff;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+
+/* Navbar styling */
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:visited {
+  /* visited link */
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #BCCAEE;
+  text-decoration: none;
+  /* No Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: #BCCAEE;
+}
+
+.desktop-navbar .active {
+  color: #BCCAEE !important;
+  border-bottom: 3px solid #BCCAEE;
+  padding-bottom: 5px;
+}
+
+.mobile-navbar .active {
+  color: #BCCAEE !important;
+  padding-bottom: 5px;
+}
+
+.mobile-navbar .active:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 20%; /* Change this to whatever width you want. */
+    border-bottom: 3px solid #BCCAEE; /* This creates the border. Replace black with whatever color you want. */
+}
+
+
+a.contact-link:hover {
+  color: #BCCAEE !important;
+}
+
+a.contact-link:visited {
+  color: #FFFFFF !important;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+nav > ul > li {
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 7px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.mobile-navbar {
+  width: 100%;
+}
+
+/* .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+} */
+.mobile-navbar .menu-items {
+  padding-top: 120px;
+  /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5); */
+  height: 100vh;
+  width: 100%;
+  transform: translate(150%);
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 50px; */
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  text-transform: uppercase;
+  /* background-color: #F1C3DE; */
+  background-color: #001B44;
+}
+
+.mobile-navbar .nav-container li {
+  list-style: none;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 30px;
+  right: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 25px;
+  width: 30px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 1px;
+  background: #ffffff;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.mobile-navbar .menu-items li {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.mobile-navbar .menu-items a {
+  padding: 0.5rem;
+  display: block;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo-box {
+  display: none;
+}
+
+.desktop-navbar {
+  display: none;
+}
+
+/* ==============================
+Navbar styling for Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+
+
+  .desktop-navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .mobile-navbar {
+    display: none;
+  }
+
+}
+
+/* Homepage specific styling */
+
+
+#hero {
+  background-image: url("../img/home/hero-480.png");
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: left;
+}
+
+#hero h1 {
+  text-align: left;
+  width: 70%;
+  margin: 0;
+  letter-spacing: -0.05rem;
+  line-height: 40px;
+}
+
+#hero p {
+  color: #ffffff;
+  display: block;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 65%;
+  line-height: 30px;
+  font-size: 23px;
+}
+
+.what-we-offer-image {
+  padding-top: 40px;
+}
+
+.bridge-finance {
+  padding-bottom: 40px;
+}
+
+
+
+
+/* ==============================
+General Layout Styling for Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  #hero h1 {
+    font-size: 40px;
+    line-height: 50px;
+    width: 60%;
+  }
+
+
+  body {
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+/* ==============================
+General Layout Styling for Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 900px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #hero {
+    /* background-image: */
+    /* linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), */
+    /* url("../img/home/hero-1024.png"); */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../img/home/hero-1024.png");
+    background-size: cover; 
+  }
+
+  #hero p {
+    font-size: 30px;
+    line-height: 40px;
+
+  }
+
+
+  h1 {
+    font-size: 45px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+}
+
+
+
+/* ==============================
+General Layout Styling for X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #hero h1 {
+    width: 80%;
+  }
+
+
+}
+
+
+
+
+
+
+
+/* About Me page specific styling */
+
+
+.about .intro-to-team p {
+  padding-bottom: 40px;
+}
+
+.about .profile .name  {
+  padding-top: 5px;
+  padding-bottom: 3px;
+  color: #9B9785;
+  font-weight: 800;
+
+}
+
+.about .profile .role  {
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.team-profiles .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.profile {
+  text-align: center;
+  width: 45%;
+  font-size: 14px;
+}
+
+.profile:last-child {
+  display: none;
+}
+
+
+
+/* ==============================
+About Me styling for Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  .profile {
+    width: 30%;
+  }
+
+  .profile:last-child {
+    display: unset;
+  }
+
+  .meet-the-team {
+    padding-bottom: 15px;
+  }
+
+}
+
+/* ==============================
+About Me styling for Larger devices (1000px and larger)
+================================= */
+@media only screen and (min-width: 1000px) {
+  .profile {
+    font-size: 18px;}
+
+
+}
+
+
+/* Footer specific styling */
+
+.contact-information {
+  padding-top: 45px;
+}
+
+.contact-information .master-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  center;
+  flex-direction: row;
+  padding-bottom: 15.5px;
+
+
+}
+
+.contact-information .column {
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  }
+
+.contact-information .contact-line {
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: #001B44;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#contact h2 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#contact p {
+  margin: 0px;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+#contact .heading {
+  color: #9B9785;
+  padding-bottom: 0;
+}
+
+#contact .contact-information a {
+  color: #9B9785;
+}
+
+
+.contact-icon {
+  width: 20px;
+  padding-right: 5px;
+}

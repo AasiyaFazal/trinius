@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aasiya Fazal (UX/UI Designer)</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script
+      src="https://kit.fontawesome.com/1e68e0300d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="home">
+    <!-- Header Section -->
+    <header class="header-home">
+      <div class="desktop-navbar">
+        <a href="index.html">
+          <img class="logo" src="img/logo.png" alt="Trinius Logo" />
+        </a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="about.html">About</a></li>
+            <li><a href="">Products</a></li>
+            <li><a class="contact-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="mobile-navbar">
+        <div class="nav-container">
+          <input id="checkBox" class="checkbox" type="checkbox" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <a href="index.html">
+            <div class="logo-box">
+              <img class="logo" src="img/logo.png" alt="Trinius Logo" />
+            </div>
+          </a>
+          <div class="menu-items" id="mobile-menu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Products</a></li>
+            <li>
+              <a class="contact-link" href="#contact" onclick="menuToggle()"
+                >Contact</a
+              >
+            </li>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <!-- Hero Introduction section -->
+      <div class="hero" id="hero">
+        <div class="container hero-text">
+          <h1>
+            We provide Sharia finance in the UK
+          </h1>
+          <p>
+            Let us help you achieve your business dreams whilst staying true to your Islamic values.
+          </p>
+        </div>
+
+        <div class="container get-started">
+          <a href="products.html" class="button">Get Started</a>
+        </div>
+      </div>
+
+
+      <div class="what-we-offer">
+        <div class="container">
+          <h2>
+            What We Offer
+          </h2>
+          <p>
+            We are specialists in providing Sharia financing options within the UK. We offer a personal approach, so that it is a seamless and stress free experience for you source UK bridge finance from £150k - £1.5m, whilst staying true to Islamic Finance principles (Sharia).
+          </p>
+          <div class="get-in-touch">
+            <a href="#contact" class="button">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="what-we-offer-image">
+          <picture>
+            <source media="(max-width:767px)" srcset="img/home/offer-480.png">
+            <img src="img/home/offer-1024.png" alt="What We Offer Photo">
+          </picture>
+        </div>
+
+      </div>
+
+      <div class="bridge-finance">
+        <div class="container">
+          <h2>
+            Sharia Bridge Finance Explained
+          </h2>
+          <p>
+            The aim of Sharia bridge finance is to allow you or your business to meet your short-term funding needs while remaining in accordance with the principles of Islamic finance principles (Sharia). A key principle followed is the avoidance of payment or receipt of interest (riba). Instead of charging interest, Sharia-compliant bridge financing structures often involve profit-sharing arrangements or rental agreements. The specific terms and structure of Sharia bridge finance will depend on what your individual needs are.
+          </p>
+          <div class="read-more">
+            <a href="products.html" class="button">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="contact-us" id="contact">
+      <div class="container">
+
+        <h2>Contact Us</h2>
+        <p>
+          If you have any queries or require advice on what your Sharia bridge financing options are, please get in touch.
+        </p>
+
+        <div class="send-us-a-message">
+          <a href="mailto:enquiries@trinius.co.uk" class="button">Send us a Message</a>
+        </div>
+
+
+        <div class="contact-information">
+          <div class="master-row">
+            <div class="column">
+              <div class="row">
+                <div class="contact-line">
+                  <a href="tel:123-456-7890">
+                    <img class="contact-icon" src="img/phone.svg" alt="Phone Icon" />
+                  </a>
+                  <a href="tel:123-456-7890" class="phone-number">123-456-7890</a>
+                </div>
+                <div class="contact-line">
+                  <a href="mailto:enquiries@trinius.co.uk">
+                    <img class="contact-icon" src="img/email.svg" alt="Email Icon" />
+                  </a>
+                  <a href="mailto:enquiries@trinius.co.uk" class="email-address">enquiries@trinius.co.uk</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <p class="heading">Our Office Address</p>
+              <p class="body">xxxxxxxxx, xxxxxxxx <br> xxxxxx, xxxxxxx</p>
+            </div>
+          </div>
+
+      </div>
+
+    </footer>
+
+    <!--Javascript code-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
